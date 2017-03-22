@@ -25,4 +25,5 @@ You found the Easter Egg at ${new Date()}
 
        );
      }
+     next();
 }
