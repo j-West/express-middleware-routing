@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const easterEgg = require('./easter-egg-middleware');
 
+app.use(easterEgg);
 app.use(express.static('public'));
 
-app.use(easterEgg);
 
 app.use((req, res) => {
   res.statusCode = 404;
